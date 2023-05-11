@@ -1,0 +1,420 @@
+Body{
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.wrapper{
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+@font-face{
+    font-family: "Russo One";
+    src: url("../Russo_One/RussoOne-Regular.ttf");
+}
+
+.header{
+    width: 98%;
+    height: 85px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #DBC08D;
+}
+
+.header_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu_link{
+    font-size: 17px;
+    font-weight: 700;
+    font-family: "Russo One";
+    text-align: center;
+}
+
+.menu_link:hover{
+    text-decoration: underline;
+}
+
+.menu_list > *:not(:last-child){
+    margin: 0px 71px 0px 0px;
+}
+
+.header_logo{
+    position: relative;
+    z-index: 1;
+}
+
+.logo_link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 2;
+}
+
+.header_button_wrapper{
+    width: 163px;
+    height: 60px;
+    border-radius: 5px;
+    background: rgba(236, 27, 46, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_button_link{
+    font-size: 17px;
+    font-weight: 700;
+    font-family: "Russo One";
+    text-align: center;
+}
+
+.first_block{
+    margin: 87px 0px 0px 0px;
+    width: 100%;
+    height: 400px;
+    background-image: url("../IT_site_imgs/main_image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.first_block_title{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Russo One";
+    color: white;
+    line-height: 110%;
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+
+.first_block_description{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Russo One";
+    color: white;
+    line-height: 110%;
+    position: relative;
+    top: 100px;
+    left: 20px;
+    width: 60%;
+}
+
+.second_block{
+    background: rgba(51, 51, 51, 0.5);
+    padding: 20px 15px;
+}
+
+.second_block_container > *:not(:last-child){
+    margin: 0px 0px 25px 0px;
+}
+
+.second_block_title{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Russo One";
+    text-align: center;
+}
+
+.second_block_subtitle{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Russo One";
+    text-align: left;
+}
+
+.second_block_gallery{
+    max-width: 50%;
+    margin: 0px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.second_block_gallery_item:nth-child(odd){
+    background: orange;
+}
+
+.second_block_gallery_item:nth-child(even){
+    background: rgba(236, 27, 46, 1);
+}
+
+.second_block_gallery_item{
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second_block_gallery_item > *:not(:last-child){
+    margin: 0px 0px 15px 0px;
+}
+
+.second_block_gallery_number{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gold;
+    border-radius: 50%;
+    font-weight: 700;
+    font-family: "Russo One";
+}
+
+.second_block_gallery_step{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Russo One";
+}
+
+.second_block_gallery_description{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Russo One";
+    line-height: 140%;
+}
+
+.second_block_gallery_image_1{
+    width: 70%;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.second_block_gallery_image_2{
+    width: 70%;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.second_block_gallery_image_3{
+    width: 70%;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.third_block{
+    padding: 20px 15px;
+    background: #19242F;
+}
+
+.third_block_container > *:not(:last-child){
+    margin: 0px 0px 40px 0px;
+}
+
+.third_block_title{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Russo One";
+    text-align: center;
+    color: white;
+}
+
+.third_block_video_wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourth_block{
+    padding: 20px 15px;
+    background: #19242F;
+}
+
+.fourth_block_title{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Russo One";
+    text-align: center;
+    color: white;
+}
+
+.fourth_block_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fourth_block_container > *:not(:last-child){
+    margin: 0px 0px 25px 0px;
+}
+
+.fourth_block > *:not(:last-child){
+    margin: 0px 0px 25px 0px;
+}
+
+.fourth_block_background_block{
+    width: 638px;
+    height: 573px;
+    background: rgba(1, 153, 109, 1);
+    border-radius: 18.1125px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourth_block_white_background{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: white;
+    border-radius: 3.72971px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 150px;
+}
+
+.fourth_block_white_background > *:not(:last-child){
+    margin: 0px 0px 20px 0px;
+}
+
+.fourth_block_white_background_inscription{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Russo One";
+    text-align: center;
+    line-height: 110%;
+}
+
+.fourth_block_white_background_line{
+    width: 80%;
+    height: 2px;
+    border-radius: 5px;
+    background: #000;
+}
+
+.fourth_block_white_background_avatar{
+    border-radius: 50%;
+}
+
+.fourth_block_white_background_name{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Russo One";
+    text-align: center;
+    line-height: 110%;
+}
+
+.fourth_block_inscription{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Russo One";
+    text-align: center;
+    line-height: 110%;
+    color: white;
+}
+
+.fourth_block_button_wrapper{
+    width: 180px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: orange;
+    border-radius: 5px;
+}
+
+.fourth_block_button_link{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Russo One";
+    text-align: center;
+    line-height: 110%;
+    color: white;
+}
+
+.footer{
+    background: #245852;
+    padding: 20px 15px;
+}
+
+.footer_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer_container > *:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.footer_logo_wrapper{
+    background: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0px 0px 0px 35px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer_logo_link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 2;
+}
+
+.footer_list > *:not(:last-child){
+    margin: 0px 0px 40px 0px;
+}
+
+.footer_link{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Russo One";
+    text-align: center;
+    line-height: 110%;
+    color: white;
+}
+
+.footer_link:hover{
+    text-decoration: underline;
+    color: orange;
+}
